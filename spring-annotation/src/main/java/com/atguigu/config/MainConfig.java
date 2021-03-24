@@ -1,7 +1,6 @@
 package com.atguigu.config;
 
-import com.atguigu.dao.BookDao;
-import com.atguigu.service.BookService;
+import com.atguigu.condition.MyTypeFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -10,8 +9,6 @@ import org.springframework.context.annotation.ComponentScan.Filter;
 import org.springframework.context.annotation.ComponentScans;
 
 import com.atguigu.bean.Person;
-import org.springframework.stereotype.Controller;
-import org.springframework.stereotype.Repository;
 
 //配置类==配置文件
 @Configuration  //告诉Spring这是一个配置类
