@@ -39,6 +39,11 @@ public class IOCTest {
     }
 
     @Test
+    public void test04() {
+        printBeans(applicationContext);
+    }
+
+    @Test
     public void test03() {
         String[] namesForType = applicationContext.getBeanNamesForType(Person.class);
         ConfigurableEnvironment environment = applicationContext.getEnvironment();
@@ -56,7 +61,6 @@ public class IOCTest {
 
     @Test
     public void test02() {
-        AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(MainConfig2.class);
 
         System.out.println("ioc容器创建完成....");
         Object bean = applicationContext.getBean("person");
